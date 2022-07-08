@@ -1,12 +1,12 @@
 :root {
-        --background-color: #ffffff;
-        --brand-color: #2196F3;
-        --text-color-primary: #212121;
-        --text-color-secondary: #757575;
-        --text-color-adrress-op60: rgba(255, 255, 255, 0.6);
-        --clients-color: #AFB1B8;
-        --set-gap30: 30px;
-        --set-gap94: 94px;
+    --background-color: #ffffff;
+    --brand-color: #2196F3;
+    --text-color-primary: #212121;
+    --text-color-secondary: #757575;
+    --text-color-adrress-op60: rgba(255, 255, 255, 0.6);
+    --clients-color: #AFB1B8;
+    --set-gap30: 30px;
+    --set-gap94: 94px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -40,15 +40,8 @@ p,
 .hidden {
     display: none;
 }
-.section__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
-}
 
-.nav-item:not(:last-child) {
-    margin-right: 50px;
-}
+
 
 .container {
     max-width: 1200px;
@@ -67,9 +60,7 @@ p,
     align-items: center;
 }
 
-.contacts-container {
-    margin-left: auto;
-}
+
 
 
 .header {
@@ -77,6 +68,13 @@ p,
         padding-bottom: 25px;*/
     border-bottom: 1px solid #ececec;
 }
+.contacts-container {
+    margin-left: auto;
+}
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 /*.nav {
     justify-content: space-between;
     min-height: 80px;
@@ -451,6 +449,11 @@ button {
 }
 
 .close-btn svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-btn svg {
     fill: currentColor;
 }
 
@@ -579,6 +582,12 @@ button {
     align-items: center;
 }
 
+.section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .team {
     background-color: #f5f4fa;
 }
@@ -698,9 +707,7 @@ button {
     line-height: 1;
     text-align: center;
 }
-.section-title {
-    margin-bottom: 50px;
-}
+
 .client-list {
     display: block;
     margin-right: var(--set-gap30);
@@ -867,7 +874,7 @@ button {
 }
 
 .newsletter-input {
-    color: var(--background-color)
+    color: var(--background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     min-width: 358px;
     min-height: 50px;
