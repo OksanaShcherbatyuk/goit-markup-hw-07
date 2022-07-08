@@ -27,13 +27,16 @@
     background-color: var(--background-color);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--background-color);
+        background-color: var(--brand-color);
+    }
+    &:focus {
+        color: var(--background-color);
+        background-color: var(--brand-color);
+    }
 }
 
-.networks__link:hover,
-.networks__link:focus {
-    color: var(--main-bg-color);
-    background-color: var(--active-link-hover-color);
-}
 
 .networks__icon {
     width: 20px;

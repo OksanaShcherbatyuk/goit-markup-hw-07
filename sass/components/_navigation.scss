@@ -35,11 +35,12 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--brand-color);
+    &:focus {
+            color: var(--brand-color);
+        }
+    &:hover {
+        color: var(--brand-color);
+    }
 }
 
 
@@ -68,12 +69,9 @@
 .nav-contacts {
     align-items: center;
     margin-bottom: 0;
+    a:hover {
+            color: var(--brand-color)};
+    a:focus {
+            color: var(--brand-color);}
 }
 
-.nav-contacts a:hover {
-    color: var(--brand-color);
-}
-
-.nav-contacts a:focus {
-    color: var(--brand-color);
-}

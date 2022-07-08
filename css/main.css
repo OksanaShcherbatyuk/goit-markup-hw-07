@@ -140,9 +140,10 @@ p,
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.nav-link:hover,
 .nav-link:focus {
+  color: var(--brand-color);
+}
+.nav-link:hover {
   color: var(--brand-color);
 }
 
@@ -171,11 +172,9 @@ p,
   align-items: center;
   margin-bottom: 0;
 }
-
 .nav-contacts a:hover {
   color: var(--brand-color);
 }
-
 .nav-contacts a:focus {
   color: var(--brand-color);
 }
@@ -349,16 +348,15 @@ button {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-input.user-data {
-  height: 40px;
-}
-
 .form-input:focus {
   background-color: inherit;
   border: 1px solid var(--brand-color);
   outline: none;
   color: var(--text-color-primary);
+}
+
+.form-input.user-data {
+  height: 40px;
 }
 
 .form-input:focus ~ .modal-icon svg {
@@ -496,11 +494,13 @@ button {
   background-color: var(--background-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.networks__link:hover,
+.networks__link:hover {
+  color: var(--background-color);
+  background-color: var(--brand-color);
+}
 .networks__link:focus {
-  color: var(--main-bg-color);
-  background-color: var(--active-link-hover-color);
+  color: var(--background-color);
+  background-color: var(--brand-color);
 }
 
 .networks__icon {
@@ -735,8 +735,10 @@ button {
   outline: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-container:hover,
+.client-container:hover {
+  color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
 .client-container:focus {
   color: var(--brand-color);
   border: 1px solid var(--brand-color);
@@ -910,11 +912,6 @@ button {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-
-.newsletter-container > .newsletter-submit {
-  padding: 10px 64px 10px 29px;
-}
-
 .newsletter-submit svg {
   position: absolute;
   display: inline-block;
@@ -923,6 +920,10 @@ button {
   top: 50%;
   right: 29px;
   transform: translateY(-50%);
+}
+
+.newsletter-container > .newsletter-submit {
+  padding: 10px 64px 10px 29px;
 }
 
 .products-list {

@@ -167,18 +167,18 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
+    svg {
+            position: absolute;
+            display: inline-block;
+            fill: currentColor;
+            margin-left: 10px;
+            top: 50%;
+            right: 29px;
+            transform: translateY(-50%);
+        }
 }
 
 .newsletter-container>.newsletter-submit {
     padding: 10px 64px 10px 29px;
 }
 
-.newsletter-submit svg {
-    position: absolute;
-    display: inline-block;
-    fill: currentColor;
-    margin-left: 10px;
-    top: 50%;
-    right: 29px;
-    transform: translateY(-50%);
-}
