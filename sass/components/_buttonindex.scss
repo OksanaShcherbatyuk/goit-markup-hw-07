@@ -27,11 +27,20 @@ button {
     line-height: 1.88;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+            background-color: #ffffff;
+            color: var(--text-color-primary);
+        };
+
+    &:focus {
+            background-color: #ffffff;
+            color: var(--text-color-primary);
+        };
 
 }
-
+/*
 .btn-index:hover,
 .btn-index:focus {
     background-color: #ffffff;
     color: var(--text-color-primary);
-}
+}*/

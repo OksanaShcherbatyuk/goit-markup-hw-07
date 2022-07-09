@@ -1,11 +1,14 @@
 .client-list {
     display: block;
     margin-right: var(--set-gap30);
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
-.client-list:last-child {
+/*.client-list:last-child {
     margin-right: 0;
-}
+}*/
 
 .client-container {
     height: 92px;

@@ -1,3 +1,9 @@
+.section__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .whatwedo-list {
     display: inline-flex;
     ;
@@ -12,11 +18,14 @@
     width: calc(100% - var(--set-gap30)*2/3);
     margin-right: var(--set-gap30);
     position: relative;
+    &:last-child {
+            margin-right: 0;
+        };
 }
 
-.whatwedopic:last-child {
+/*.whatwedopic:last-child {
     margin-right: 0;
-}
+}*/
 
 .team-sl-list,
 .whatwedo-text-thumb {
